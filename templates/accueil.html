@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <form id="formatage" action="/synchro" method="post">
+        <div style="width: 100%; float: center;">
+            <div style="width: 50%; float: left;">
+                <input type="text" name="dir1[]" value={{dir1}}>
+            </div>
+            <div style="width: 50%; float: right;">
+                <input type="text" name="dir2[]" value={{dir2}}>
+            </div>
+        </div>
+        <div style="width: 100%; float: center;">
+            <h4>Choisir les extensions</h4>
+            <div>
+                <input type="checkbox" name="ext[]" value=txt>
+                <label for="txt">.txt</label>
+            </div>
+            <div>
+            <input type="checkbox" name="ext[]" value="pdf">
+                <label for="pdf">.pdf</label>
+            </div>
+            <div>
+                <input type="checkbox" name="ext[]" value="png">
+                <label for="png">.png</label>
+            </div>
+            <input id="synchro" type="submit" value="Submit"/>
+        </div>
+    </form>
+
+</body>
+</html>
